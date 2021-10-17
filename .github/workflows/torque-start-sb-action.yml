@@ -1,11 +1,7 @@
 name: CI
-on:
-  pull_request:
-    branches:
-      - master
+on: [push,workflow_dispatch]
 
-jobs:
-        
+jobs:     
   test-with-torque:
     runs-on: ubuntu-latest
     
